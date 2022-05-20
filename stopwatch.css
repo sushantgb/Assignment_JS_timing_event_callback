@@ -1,0 +1,66 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&display=swap');
+
+/* universal selector */
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1533090161767-e6ffed986c88?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469);
+    background-size: cover;
+}
+/* main container div styling */
+.container {
+    background-color: rgb(92, 242, 200);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    opacity: 0.8;
+    width: 50%;
+    margin: auto;
+    margin-top: 3em;
+    gap: 2em;
+    border-radius: 0.2em;
+}
+/* styling for stopwatch paragraph */
+.stopwatch {
+    font-size: 8em;
+    display: flex;
+    gap: 0.2em;
+}
+/* styling for buttons paragraph */
+.buttons {
+    display: flex;
+    gap: 2em;
+}
+
+/* styling for buttons */
+#start-button,
+#stop-button,
+#reset-button {
+    font-size: 1.5em;
+    width: 5em;
+    cursor: pointer;
+    border-style: none;
+    background-color: rgb(252, 238, 238);
+    font-weight: bold;
+    border-radius: 0.1em;
+    color: rgb(10, 10, 10);
+    padding: 0.3em;
+}
+/* hover effect for buttons */
+#start-button:hover,
+#stop-button:hover,
+#reset-button:hover {
+    background-color: bisque;
+}
+/* disabled effect for start button when it is disable after start */
+#start-button:disabled {
+    opacity: 0.5;
+    background-color: azure;
+}
